@@ -37,9 +37,6 @@ const options = {
     defaultDate: new Date(),
     minuteIncrement: 1,
     onClose(selectedDates) {
-      console.log(selectedDates[0]);
-    },
-    onClose(selectedDates) {
         const currentDate = new Date();
         if (selectedDates[0] - currentDate > 0) {
           startBtn.disabled = false;
